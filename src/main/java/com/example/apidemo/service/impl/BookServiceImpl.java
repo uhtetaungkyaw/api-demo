@@ -35,8 +35,23 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book findById(Integer id) {
-        return bookRepo.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Invalid ID  " + id));
+        return null;
+    }
+
+//    @Override
+//    public Book findById(Integer id) {
+//        return bookRepo.findById(id)
+//                .orElseThrow(() -> new IllegalArgumentException("Invalid ID  " + id));
+//
+//    }
+
+//    @Override
+//    public Book updateBook(int id, BookRequest bookRequest) {
+//        Book book = findById(id);
+//        book.setBookName(bookRequest.getBookName());
+//        book.setPublisher(bookRequest.getPublisher());
+
+//        Author author = authorRepo.findById(bookRequest.getAuthorId()).get();
+//    }
 
     }
-}
